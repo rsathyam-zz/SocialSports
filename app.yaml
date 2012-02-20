@@ -1,0 +1,24 @@
+application: socialsports
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /
+  script: socialsports.py
+
+- url: /leagues
+  script: leagues.py
+
+- url: /login
+  script: login.py
+
+- url: /css
+  static_dir: css
+
+- url: /images
+  static_dir: images
+
+- url: /(.*\.(gif|png|jpg))
+  static_files: static/\1
+  upload: static/(.*\.(gif|png|jpg))

@@ -1,0 +1,70 @@
+/* Imports */
+@import url("global-forms.css");
+
+body {
+/*	background: #F5F4EF url('images/bg.png');
+	color: #000305;*/
+	font-size: 87.5%; /* Base font size: 14px */
+	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	line-height: 1.429;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#login {
+	float: right;
+}
+
+			
+#banner {
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+/* Lists */
+ul {
+	list-style: outside disc;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+/* Headings */ h2 {font-size: 1.571em}	/* 22px */
+
+h2, h3, h4, h5, h6 { font-weight: 400; line-height: 1.1; margin-bottom: .8em; }
+
+
+#content {
+	background: #fff;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right:auto;
+	overflow: hidden;
+	padding: 20px 20px;
+	width: 760px;
+}
+
+.hentry {
+	padding: 1.5em 0;
+}
+li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
+#content > .hentry {padding: 1em 0;}
+
+.entry-title {font-size: 2.429em; margin-bottom: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none;}
+
+.hentry .post-info * {font-style: normal;}
+
+#posts-list {list-style: none; margin: 0;}
+#posts-list .hentry {padding-left: 200px; position: relative;}
+#posts-list .hentry:hover {
+	background: #C64350;
+	color: #fff;
+}
