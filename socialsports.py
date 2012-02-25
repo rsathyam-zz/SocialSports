@@ -2,10 +2,8 @@ from google.appengine.ext import webapp
 from google.appengine.ext.webapp.util import run_wsgi_app
 
 import homepage
-import login
-
 application = webapp.WSGIApplication( [('/', homepage.HomePage)],
-				      [('/login', login.Login)])
+					debug=True)
 
 def main():
 	run_wsgi_app(application)

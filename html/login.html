@@ -1,13 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Login to PlayOn</title>
-	<link rel="stylesheet" href="css/login.css" type="text/css" />
-</head>
-<body id="index" class="home">
-	<div id="login" class="body">
-		<a href="login">Log In</a>
-	</div>
-</body>
-</html>
+ <html>
+    <head>
+      <title>My Facebook Login Page</title>
+    </head>
+    <body>
+      <center>
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '277246932344276',
+            status     : true, 
+            cookie     : true,
+            xfbml      : true,
+            oauth      : true,
+          });
+        };
+        (function(d){
+           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+           js = d.createElement('script'); js.id = id; js.async = true;
+           js.src = "//connect.facebook.net/en_US/all.js";
+           d.getElementsByTagName('head')[0].appendChild(js);
+         }(document));
+      </script>
+      <div class="fb-login-button">Login with Facebook</div>
+      </center>
+    </body>
+ </html>

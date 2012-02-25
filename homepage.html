@@ -6,18 +6,43 @@
 	<link rel="stylesheet" href="css/homepage.css" type="text/css" />
 </head>
 <body id="index" class="home">
-	<div id="login" class="body">
-		<a href="login">Log In</a>
-	</div>
-	<header id="banner" class="body">
-		<center><img src="images/Title.png" width="400" height="200"></center>
+	<section id="login" class="body">
+	      <div id="fb-root"></div>
+	      <script type="text/javascript">
+		window.fbAsyncInit = function() {
+		  FB.init({
+		    appId      : '277246932344276',
+		    status     : true, 
+		    cookie     : true,
+		    xfbml      : true,
+		    oauth      : true,
+		  });
+		};
+		(function(d){
+		   var js, id = 'facebook-jssdk'; if (d.getElementById(id)){return;}
+		   js = d.createElement('script'); js.id = id; js.async = true;
+		   js.src = "//connect.facebook.net/en_US/all.js";
+		   d.getElementsByTagName('head')[0].appendChild(js);
+		 }(document));
+	      </script>
+      	    <fb:login-button scope="email" show-faces="true" autologoutlink="true"></fb:login-button>
+	    <script type="text/javascript">
+		FB.api('/me', function(response) {
+  			console.log(response.name);
+		});		
+	    </script>
+	</section>
+	<header id="banner" class="banner_image">
+		<center><img src="images/Title.png" width="400" height="200" />
+		</center>
 	</header>
 	<section id="content" class="body">
+		<center>
 		<ol id="posts-list" class="hfeed">
 		  <li>
                     <article class="hentry">
 		      <header>
-			<h2 class="entry-title"<a href="#" rel="bookmark" title="Create/Edit League">Create/Edit Leagues</a></h2>
+			<h2 class="entry-title"<a href="league" rel="bookmark" title="Create/Edit League">Create/Edit Leagues</a></h2>
 		      </header>
 		      <div class="entry-content">
 			<p>Create a new league, or edit an existing league</p>
@@ -30,10 +55,11 @@
 			<h2 class="entry-title"<a href="#" rel="bookmark" title="Create/Edit League">Signup for Game</a></h2>
 		      </header>
 		      <div class="entry-content">
-			<p>Register for a game in a league. League ID required.</p>
+			<p>Register for a game in a league</p>
 		      </div>
 		    </article>
 		  </li>
+		</center>
 	</section>
 </body>
 </html>

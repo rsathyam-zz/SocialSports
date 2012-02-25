@@ -10,30 +10,36 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	margin-left: auto;
-	margin-right:auto;
 }
 
 #login {
 	float: right;
+	margin-right: 10px;
+	font-size: 120%; /* Base font size: 14px */
 }
 
 			
 #banner {
-	margin-bottom: 100px;
-	margin-left: auto;
-	margin-right:auto;
+	margin: 0 auto;
+	width: 600px;
+	text-align: left;
+	position: relative;
+	padding: 50px;
 }
 
 /* Lists */
 ul {
 	list-style: outside disc;
 	margin: 1em 0 1.5em 1.5em;
+	text-align: center;
+	position: relative;
 }
 
 ol {
 	list-style: outside decimal;
 	margin: 1em 0 1.5em 1.5em;
+	text-align: center;
+	position: relative;
 }
 
 /* Headings */ h2 {font-size: 1.571em}	/* 22px */
@@ -63,7 +69,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .hentry .post-info * {font-style: normal;}
 
 #posts-list {list-style: none; margin: 0;}
-#posts-list .hentry {padding-left: 200px; position: relative;}
+#posts-list .hentry {position: relative;}
 #posts-list .hentry:hover {
 	background: #C64350;
 	color: #fff;
